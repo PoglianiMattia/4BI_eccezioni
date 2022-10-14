@@ -1,9 +1,12 @@
 package main;
 
+import java.util.IllegalFormatFlagsException;
+
 public class Scarpa {
     private int numero;
 
-    public int getNumero() {
+    public int getNumero() throws InterruptedException{
+        Thread.sleep(2000);
         return numero;
     }
 
